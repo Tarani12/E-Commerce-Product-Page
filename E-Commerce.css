@@ -51,46 +51,12 @@ a.active,a:hover{
 #check{
     display: none;
 }
-@media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-}
-@media (max-width: 858px){
-    .checkbtn{
-      display: block;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background: none;
-    }
-    #check:checked ~ ul{
-      left: 0;
-    }
-}
 .images{
     display: flex;
+}
+.responsive{
+  width: 25%;
+  display: inline-block;
 }
 img{ height: 15em;
     width: 35em;
@@ -171,14 +137,6 @@ button:hover{
 .bar-3 {width: 10%; height: 18px; background-color: orange;}
 .bar-2 {width: 4%; height: 18px; background-color: orange;}
 .bar-1 {width: 15%; height: 18px; background-color: orange;}
-@media (max-width: 400px) {
-  .side, .middle {
-    width: 100%;
-  }
-  .right {
-    display: none;
-  }
-}
 .cost{
   border: solid;
   width: 20%;
@@ -227,5 +185,51 @@ span{
   font-size:large;
 }
 .address{
-  padding-left: 240px;
+  margin-left: 20px;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
 }
